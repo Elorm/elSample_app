@@ -2,11 +2,13 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
+gem 'pg', '0.15.1'
+
 gem 'rails', '4.0.2'
 gem 'bootstrap-sass', '2.3.2.0'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
+  # gem 'sqlite3', '1.3.8'
   gem 'guard-rspec', '2.5.0'
   gem 'rspec-rails', '2.13.1'
   gem 'growl', '1.0.3'
@@ -32,6 +34,5 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
